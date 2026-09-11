@@ -52,7 +52,7 @@
   color: #52575F;
 }
 .nav__link.--active {
-  color: #3685fb;
+  color: rgb(54, 133, 251);
   font-weight: 600;
   position: relative;
 }
@@ -79,7 +79,7 @@
   transition: width 0.3s;
 }
 .nav__link:hover {
-  color: #3685fb;
+  color: rgb(54, 133, 251);
 }
 .nav__link:hover::before {
   width: 12px;
@@ -122,16 +122,16 @@
 .btn--primary {
   border: none;
   outline: none;
-  background-color: #3685fb;
+  background-color: rgb(54, 133, 251);
   color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-size: 16px;
 }
 .btn--primary:hover {
-  border: 1px solid #3685fb;
+  border: 1px solid rgb(54, 133, 251);
   background-color: #FFFFFF;
-  color: #3685fb;
+  color: rgb(54, 133, 251);
   transition: all 0.4s;
 }
 .btn__arrows {
@@ -358,9 +358,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .wrapper {
   width: 100%;
-  height: 820px;
+  min-height: 820px;
   position: relative;
 }
 .wrapper::before {
@@ -762,4 +767,277 @@ footer {
   color: #878E99;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 1199px) {
+  .container {
+    margin: 0 48px;
+  }
+  .header {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  .header__search {
+    flex: 1;
+    min-width: 240px;
+    margin-left: 0;
+  }
+  .header__nav {
+    width: 100%;
+    margin-left: 0;
+  }
+  .nav__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+  }
+  .nav__item {
+    margin-right: 0;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .banner__image {
+    width: 100%;
+    max-width: 570px;
+    height: 520px;
+    margin-right: 0;
+  }
+  .banner__content {
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+  }
+  .banner .content {
+    margin-left: 0;
+    text-align: center;
+  }
+  .banner .content__option {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 32px;
+  }
+  .banner .content__story {
+    margin-left: 0;
+  }
+  .image__slide {
+    width: 320px;
+    height: auto;
+  }
+  .image__slide.--active {
+    width: 220px;
+    height: auto;
+  }
+  .section__1 {
+    padding-top: 120px;
+  }
+  .section__3 {
+    padding: 120px 0;
+  }
+  .section__4 {
+    height: auto;
+    padding: 48px 0;
+    background-position: left 24px center, right center;
+  }
+  .destinations {
+    height: auto;
+    padding-bottom: 120px;
+  }
+  .destinations__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .destinations__content {
+    width: 100%;
+    height: auto;
+  }
+  .destinations__slider {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 40px;
+  }
+  .card__item-slider {
+    width: calc(50% - 10px);
+    margin-right: 0 !important;
+  }
+  .card__pricing {
+    width: calc(50% - 15px);
+    height: auto;
+    margin-right: 0 !important;
+  }
+  .card__pricing--image {
+    height: auto;
+  }
+  .pricing__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 30px;
+  }
+  .reviews {
+    flex-direction: column;
+    gap: 36px;
+  }
+  .reviews__image {
+    width: 100%;
+    justify-content: center;
+  }
+  .reviews__content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .subscribe {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .subscribe__content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .subscribe__form {
+    width: 100%;
+    max-width: 470px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__info {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+  .footer__content {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .footer__item {
+    height: auto;
+  }
+  .footer__item:nth-child(1), .footer__item:nth-child(2) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    margin: 0 20px;
+  }
+  .header {
+    padding-top: 24px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .header__search {
+    min-width: 0;
+    width: 100%;
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .content__title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .content__description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .content__option {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content__title-note {
+    margin-left: 24px;
+  }
+  .banner__image {
+    max-width: 340px;
+    height: 360px;
+    background-size: 180px auto;
+  }
+  .image__slide {
+    width: 220px;
+  }
+  .image__slide.--active {
+    width: 160px;
+  }
+  .image__story {
+    width: 64px;
+    height: 64px;
+  }
+  .destinations {
+    padding-bottom: 96px;
+  }
+  .destinations__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .pricing__content {
+    width: 100%;
+    height: auto;
+  }
+  .pricing__title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .card__item-slider, .card__pricing {
+    width: 100%;
+  }
+  .reviews__image {
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .reviews__image--left {
+    margin-right: 0;
+  }
+  .reviews__image--top {
+    margin-bottom: 16px;
+  }
+  .reviews__content--title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .subscribe__content--title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .subscribe__form {
+    height: auto;
+    flex-direction: column;
+    gap: 12px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+  .input--subscribe {
+    width: 100%;
+    height: 52px;
+    padding: 0 18px;
+    border: 1px solid #E6E9ED;
+    border-radius: 26px;
+  }
+  .btn--subscribe, .btn--view, .btn-banner {
+    width: 100%;
+    max-width: 260px;
+    height: 56px;
+  }
+  .section__1, .section__3 {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .section__2 {
+    padding: 72px 0;
+  }
+  footer {
+    padding-top: 72px;
+  }
+}
